@@ -1,0 +1,583 @@
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+  font-family: 'Cabinet Grotesk', sans-serif;
+  font-family: "Satisfy", cursive;
+}
+.container{
+    max-width: 1440px;
+    padding: 0 30px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* CSS PRELOADER */
+.loader {
+  background: linear-gradient(159deg, rgba(229, 132, 42, 1) 0%, rgba(0, 0, 0, 1) 45%, rgba(0, 0, 0, 1) 100%);
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1.4s all ease;
+  z-index: 99999999;
+}
+
+.loader>div {
+  font-size: 140px;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  letter-spacing: 7px;
+  animation: textGlow 3s forwards infinite;
+}
+
+@keyframes textGlow {
+  0% {
+      filter: drop-shadow(1px 2px 20px #fff);
+  }
+  50% {
+      filter: drop-shadow(0 0 0 #000);
+  }
+  100% {
+      filter: drop-shadow(1px 2px 20px #fff);
+  }
+}
+
+header {
+  width: 100%;
+  height: auto;
+  padding: 11px 0;
+  background: var(--base-black, #202022);
+}
+/*------ header  stert----*/
+.Gen {
+  width: 100%;
+  height: auto;
+  padding: 10px 0;
+}
+.Gen_seller {
+  text-align: center;
+  margin: 0 auto;
+}
+.Gen_seller h2 {
+  color: var(--base-pure-white, #FFF);
+  -webkit-text-stroke-width: 1;
+  -webkit-text-stroke-color: #000;
+  font-family: "Cabinet Grotesk";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+.ntl {
+  width: 100%;
+  height: auto;
+  border-top: 2px solid var(--base-pure-white, #a19c9c);
+}
+.ntl .inner ul {
+  display: flex;
+  padding: 16px 0px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 48px;
+  list-style: none;
+}
+.ntl .inner ul a {
+  color: var(--base-pure-white, #FFF);
+  font-family: "Cabinet Grotesk";
+  font-size: 16px;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+/*------ header end----*/
+@media screen and (max-width: 991px) {
+  /*---- header stert -----*/
+  header {
+    padding: 6px 0;
+}
+.Gen_seller h2 {
+  font-size: 30px;
+}
+.ntl .inner ul {
+  padding: 13px 0px;
+  gap: 39px;
+}
+  /*---- header end -----*/
+}
+.ntl .inner .fa {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+   /*---- header stert -----*/
+   .ntl .inner ul {
+    background-color: rgba(39, 11, 5, 0.32);
+    text-align: center;
+    margin: 0 auto;
+    box-shadow: 0px 0px 4px 0px rgb(100 108 108 / 8%);
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    padding-top: 92px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    z-index: 2;
+    transition: right 0.3s;
+}
+.ntl .inner .fa {
+    display: block;
+    font-size: 22px;
+    position: absolute;
+    top: 15px;
+    right: 36px;
+    color: #f8f3f3;
+  }
+  .ntl  #sidemenu li:nth-child(5) a{
+      font-size: 15px;
+      gap: 8px;
+  }
+   /*---- header end -----*/
+}
+/*------ banner stert----*/
+.banner {
+  width: 100%;
+  height: 872px;
+  background-image: url(../images/Hero.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.banner_Float {
+  position: absolute;
+  top: 0;
+  right: 14%;
+}
+.banner_Float img {
+  width: 100%;
+  height: auto;
+}
+.banner_thec {
+  padding-top: 13%;
+}
+.banner_thec h1 {
+  color: var(--base-black, #202022);
+  font-family: "Cabinet Grotesk";
+  font-size: 128px;
+  max-width: 855px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 100%;
+}
+.banner_boostin {
+  color: var(--accent, #E5842A);
+  font-family: "Satisfy";
+  font-size: 160px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90%; /* 144px */ 
+}
+.banner_our {
+  color: var(--base-black, #202022);
+  font-family: "Cabinet Grotesk";
+  font-size: 216px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 75%;
+  letter-spacing: -6.48px;
+  text-transform: uppercase;
+}
+.banner_polis p {
+  color: #000;
+  font-family: "Cabinet Grotesk";
+  padding-top: 72px;
+  padding-bottom: 24px;
+  max-width: 622px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+.banner_btn {
+  display: inline-flex;
+  padding: 16px 28px 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  background: var(--base-black, #202022);
+}
+.banner_btn a {
+  color: var(--base-pure-white, #FFF);
+  font-family: "Cabinet Grotesk";
+  text-decoration: none;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 90%;
+  text-transform: uppercase;
+}
+.banner_look {
+  display: flex;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+}
+.banner_look img {
+  width: 100%;
+  height: auto;
+}
+/*------ banner end ----*/
+@media screen and (max-width: 1200px) {
+  /*---- banner stert -----*/
+  .banner_Float {
+    right: 3%;
+}
+.banner_thec {
+  padding-top: 21%;
+}
+.banner_thec h1 {
+  font-size: 90px;
+  max-width: 485px;
+}
+.banner_boostin {
+  font-size: 90px;
+}
+.banner_our {
+  font-size: 150px;
+}
+  /*---- banner end -----*/
+}
+@media screen and (max-width: 991px) {
+  /*---- banner stert -----*/
+  .banner_thec h1 {
+    font-size: 60px;
+    max-width: 368px;
+}
+.banner_boostin {
+  font-size: 60px;
+}
+.banner_Float {
+  display: flex;
+  right: 4%;
+}
+.banner_Float img {
+  width: 100%;
+  height: auto;
+}
+.banner_our {
+  font-size: 115px;
+}
+.banner_thec {
+  padding-top: 39%;
+}
+  /*---- banner end -----*/
+}
+@media screen and (max-width: 767px) {
+   /*---- banner stert -----*/
+   .banner {
+    height: 780px;
+}
+   .banner_Float {
+    display: flex;
+    position: inherit;
+}
+.banner_thec {
+  padding-top: 10%;
+}
+.banner_thec h1 {
+  font-size: 40px;
+  max-width: 220px;
+  text-align: center;
+  margin: 0 auto;
+}
+.banner_boostin {
+  font-size: 40px;
+}
+.banner_our {
+  font-size: 70px;
+  letter-spacing: 0.52px;
+}
+.banner_polis {
+  text-align: center;
+  margin: 0 auto;
+}
+.banner_polis p {
+  padding-top: 25px;
+  padding-bottom: 21px;
+  max-width: 293px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 18px;
+}
+   /*---- banner end -----*/
+}
+/*---- Self stert -----*/
+.Self {
+  width: 100%;
+  height: auto;
+}
+.Self .container {
+  max-width: 100%;
+  padding: 0;
+}
+.Self .inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+.Self_best {
+  display: flex;
+  padding: 80px 64px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  flex: 1 0 0;
+  align-self: stretch;
+  background: var(--base-black, #202022);
+}
+.Self_eseh {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+.Self_ver h2 {
+  color: var(--base-pure-white, #FFF);
+  font-family: "Cabinet Grotesk";
+  max-width: 540px;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 90%;
+  letter-spacing: 1.28px;
+  text-transform: uppercase;
+}
+.Self_clean p {
+  color: var(--base-pure-white, #FFF);
+  font-family: "Cabinet Grotesk";
+  padding-bottom: 32px;
+  font-size: 20px;
+  max-width: 584px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+.Self_btn {
+  display: inline-flex;
+  padding: 16px 28px 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border: 1px solid var(--base-pure-white, #FFF);
+}
+.Self_btn a {
+  color: var(--base-pure-white, #FFF);
+  font-family: "Cabinet Grotesk";
+  text-decoration: none;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 90%;
+  text-transform: uppercase;  
+}
+.Self_eaeh {
+  width: 50%;
+  display: flex;
+}
+.Self_eaeh img {
+  width: 100%;
+  height: auto;
+}
+/*---- Self end -----*/
+@media screen and (max-width: 1200px) {
+  /*---- Self stert -----*/
+  .Self_best {
+    padding: 50px 45px;
+    gap: 26px;
+}
+.Self_eaeh {
+  width: 40%;
+}
+.Self_ver h2 {
+  max-width: 540px;
+  font-size: 54px;
+  letter-spacing: 3.28px;
+}
+.Self_clean p {
+  padding-bottom: 32px;
+  font-size: 18px;
+  max-width: 584px;
+  line-height: 127%;
+  letter-spacing: 0.4px;
+}
+  /*---- Self end -----*/
+}
+@media screen and (max-width: 991px) {
+  /*---- Self stert -----*/
+  .Self_best {
+    padding: 30px 30px;
+    gap: 26px;
+}
+.Self_ver {
+  text-align: center;
+  margin: 0 auto;
+}
+  .Self_ver h2 {
+    max-width: 514px;
+    font-size: 40px;
+    letter-spacing: 4.28px;
+}
+.Self_clean {
+  text-align: center;
+  margin: 0 auto;
+}
+.Self_clean p {
+  padding-top: 17px;
+  padding-bottom: 20px;
+  font-size: 15px;
+  max-width: 379px;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 127%;
+  letter-spacing: 0.4px;
+}
+  /*---- Self end -----*/
+}
+@media screen and (max-width: 767px) {
+   /*---- Self stert -----*/
+   .Self .inner {
+    flex-direction: column;
+}
+.Self_best {
+  padding: 20px 20px;
+  gap: 26px;
+}
+.Self_ver h2 {
+  max-width: 309px;
+  font-size: 26px;
+  letter-spacing: 3.28px;
+}
+.Self_clean p {
+  padding-top: 21px;
+  padding-bottom: 26px;
+  font-size: 16px;
+  max-width: 379px;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 127%;
+  letter-spacing: 0.4px;
+}
+   .Self_eaeh {
+    width: 100%;
+}
+   /*---- Self end -----*/
+}
+/*---- Eleva stert -----*/
+.Eleva {
+  width: 100%;
+  height: auto;
+  padding: 60px 0;
+}
+.Eleva marquee {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #a9a9ad;
+  font-family: "Cabinet Grotesk";
+  color: #fff;
+  font-size: 128px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 90%;
+  letter-spacing: 2.56px;
+  text-transform: uppercase;
+}
+.Eleva .container {
+  padding: 0 64px;
+}
+.Eleva .inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 1 0 0;
+  align-self: stretch;
+  position: relative;
+  margin-top: -53px;
+  z-index: 99999;
+}
+.Eleva_groom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 200px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+.Eleva_NEW h2 {
+  color: var(--base-black, #202022);
+  font-family: "Cabinet Grotesk";
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 90%;
+  letter-spacing: 1.92px;
+  text-transform: uppercase;
+}
+.Eleva_like p {
+  color: var(--base-black, #202022);
+  font-family: "Cabinet Grotesk";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  padding-bottom: 32px;
+  line-height: 120%;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+.Eleva_btn {
+  display: inline-flex;
+  padding: 16px 28px 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  background: var(--base-black, #202022); 
+}
+.Eleva_btn a {
+  color: var(--base-pure-white, #FFF);
+  font-family: "Cabinet Grotesk";
+  text-decoration: none;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 90%;
+  text-transform: uppercase;  
+}
+/*---- Eleva end -----*/
+@media screen and (max-width: 1200px) {
+  /*---- Eleva stert -----*/
+  /*---- Eleva end -----*/
+}
+@media screen and (max-width: 991px) {
+  /*---- Eleva stert -----*/
+  /*---- Eleva end -----*/
+}
+@media screen and (max-width: 767px) {
+   /*---- Eleva stert -----*/
+   /*---- Eleva end -----*/
+}
